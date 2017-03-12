@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/nvoi/merchant/indexjsgrid.js")"></script>
+}
+
+<h2>Index</h2>
+
+<div id="jsGrid"></div>
+<br/>
+
+<button onclick="location.href='@Url.Action("AddMerchant", "Merchant")';return false;">Add New Merchant</button>
+
+
+

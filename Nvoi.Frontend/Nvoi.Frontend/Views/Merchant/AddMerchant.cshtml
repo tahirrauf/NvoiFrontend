@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "AddMerchant";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/nvoi/merchant/app/app.js")"></script>
+    <script src="@Url.Content("~/Scripts/nvoi/merchant/app/MerchantController.js")"></script>
+}
+
+<h2>Add Merchant</h2>
+
+
+<hr />
+<div ng-app="MerchantApp" id="body">
+    <div ng-controller="MerchantController">
+        <form role="form" style="max-width: 500px;">
+            <strong class="error">{{ error }}</strong>
+            <div class="form-group">
+                <label for="display_namere">
+                    Display Name
+                </label>
+                <input type="text" class="form-control" id="display_name" ng-model="Merchant.displayName" />
+            </div>
+            <div class="form-group">
+                <label for="registered_name">
+                    Registered Name:
+                </label>
+                <input type="text" class="form-control" id="registered_name" ng-model="Merchant.registeredName" />
+            </div>
+
+            <div class="form-group">
+                <label for="email">
+                    Email:
+                </label>
+
+                <input type="text" class="form-control" id="email" ng-model="Merchant.email" />
+            </div>
+
+            <div class="form-group">
+                <label for="web">
+                    Web URL:
+                </label>
+
+                <input type="text" class="form-control" id="web" ng-model="Merchant.webURL" />
+            </div>
+
+            <div class="form-group">
+                <label for="phone">
+                    Phone:
+                </label>
+                <input type="text" class="form-control" id="phone" ng-model="Merchant.phone" />
+            </div>
+
+
+            <button type="submit" class="btn btn-default" ng-click="save()">
+                Submit
+            </button>
+        </form>
+        </div>
+    </div>
+
