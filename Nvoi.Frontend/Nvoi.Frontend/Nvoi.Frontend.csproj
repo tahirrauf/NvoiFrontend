@@ -112,7 +112,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\MrechantController.cs" />
+    <Compile Include="Controllers\MerchantController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -908,6 +908,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\jsgrid.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\nvoi\merchant\app\app.js" />
+    <Content Include="Scripts\nvoi\merchant\app\MerchantController.js" />
     <Content Include="Scripts\nvoi\merchant\indexjsgrid.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -927,8 +929,9 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Mrechant\Index.cshtml" />
+    <Content Include="Views\Merchant\Index.cshtml" />
     <Content Include="Scripts\version.json" />
+    <Content Include="Views\Merchant\AddMerchant.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

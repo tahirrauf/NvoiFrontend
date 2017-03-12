@@ -1,0 +1,1 @@
+﻿var MerchantApp= angular.module('MerchantApp', []);

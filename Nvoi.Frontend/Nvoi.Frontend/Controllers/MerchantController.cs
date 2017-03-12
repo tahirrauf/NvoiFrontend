@@ -6,10 +6,15 @@ using System.Web.Mvc;
 
 namespace Nvoi.Frontend.Controllers
 {
-    public class MrechantController : Controller
+    public class MerchantController : Controller
     {
         // GET: Mrechant
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult AddMerchant()
         {
             return View();
         }
